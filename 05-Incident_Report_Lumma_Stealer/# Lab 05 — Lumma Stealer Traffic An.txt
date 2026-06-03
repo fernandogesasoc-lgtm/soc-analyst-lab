@@ -1,0 +1,30 @@
+# Lab 05 — Lumma Stealer Traffic Analysis
+
+**Tool:** Wireshark  
+**Source:** malware-traffic-analysis.net (2026-01-31)  
+**Date:** June 2026
+
+## Summary
+Analysed a PCAP from a simulated SOC alert for Lumma Stealer 
+victim fingerprinting activity. The SIEM alert fired for 
+"ET MALWARE Lumma Stealer Victim Fingerprinting Activity" 
+triggered by traffic from 153.92.1.49 over TCP port 80.
+
+Lumma Stealer is an information-stealing malware-as-a-service 
+(MaaS) capable of harvesting browser credentials, cookies, 
+cryptocurrency wallets, and sensitive system data. The infected 
+host was identified through HTTP traffic analysis, Ethernet frame 
+inspection, and Kerberos authentication records. The C2 domain 
+whitepepper.su was identified via the HTTP Host header in 
+/api/set_agent fingerprinting calls.
+
+## Findings
+- **Infected IP:** 10.1.21.58
+- **MAC Address:** 00:21:5d:c8:0e:f2
+- **Hostname:** DESKTOP-ES9F3ML
+- **User Account:** gwyatt (WIN11OFFICE domain)
+- **C2 Domain:** whitepepper.su (153.92.1.49:80)
+- **Fingerprinting URI:** /api/set_agent?id=3BF67EC053...
+
+## Wireshark Filters Used
+- C2 traffic: `(http.request or tls.handshake.type eq 1) and !(ssdp) and ip.addr eq 153.92.1.49
