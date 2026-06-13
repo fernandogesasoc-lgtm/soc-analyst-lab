@@ -1,0 +1,4 @@
+soc-analyst-lab/
+└── syn-flood-dos/
+    ├── README.md
+    └── SYN_Flood_Lab_Report_Full.docx
