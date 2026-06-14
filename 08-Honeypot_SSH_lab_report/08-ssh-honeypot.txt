@@ -1,0 +1,3 @@
+08-ssh-honeypot/
+├── README.md
+└── Honeypot_SSH_Lab_Report.docx
