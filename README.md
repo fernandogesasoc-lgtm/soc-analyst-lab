@@ -1,9 +1,6 @@
 # Cybersecurity Portfolio — Fernando Gesa
 
-This repository documents hands-on lab exercises covering 
-malware analysis, traffic analysis, web proxy interception, 
-and social engineering defence techniques.
-
+This repository documents hands-on lab exercises covering malware analysis, traffic analysis, web proxy interception, social engineering defence techniques, DoS attack simulation, and incident reporting.
 
 ---
 
@@ -15,7 +12,8 @@ and social engineering defence techniques.
 | 02 | [AsyncRAT Malware Analysis](./02-asyncrat-malware-analysis/) | PEStudio, Detect-it-Easy, any.run | Static/dynamic analysis, IOC extraction, MITRE ATT&CK mapping |
 | 03 | [Burp Suite Proxy Interception](./03-burpsuite-proxy-interception/) | Burp Suite CE, Firefox | HTTP proxy, MITM concepts, request inspection |
 | 04 | [NetSupport RAT Traffic Analysis](./04-traffic-analysis-netsupport-rat/) | Wireshark | PCAP analysis, NBNS/Kerberos, SOC incident reporting |
-
+| 05 | [Lumma Stealer Incident Report](./05-Incident_Report_Lumma_Stealer/) | Wireshark, MITRE ATT&CK | Malware traffic analysis, IOC identification, incident reporting |
+| 06 | [SYN Flood DoS Attack](./06-Syn-Floods-DoS-attack/) | hping3, Nmap, Wireshark | DoS simulation, TCP analysis, MITRE ATT&CK mapping, SOC detection |
 
 ---
 
